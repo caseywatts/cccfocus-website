@@ -13,7 +13,7 @@
   let rssJSON = JSON.stringify(rssData);
 </script>
 
-<div class="panel panel-main flex justify-between">
+<div class="panel panel-main sm:flex justify-between">
   <h3 class="text-3xl inline-block">Recent Updates</h3>
   <span>RSS: <code>dmv.community/@cccfocus.rss</code> <a target="_blank" class="ml-2 link-color outline outline-2 rounded-full" href="https://www.lifewire.com/what-is-an-rss-feed-4684568">❓</a></span>
 </div>
