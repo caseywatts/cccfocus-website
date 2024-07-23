@@ -16,7 +16,7 @@ body {
 }
 
 .link-color {
-  @apply text-blue-600 visited:text-violet-600;
+  @apply text-blue-600 hover:text-blue-500 visited:text-violet-600 visited:hover:text-violet-500;
 }
 
 .link {

@@ -3,14 +3,19 @@
   import rssFeedXml from "../../public/@cccfocus.rss?raw";
   import FormattedDate from "./FormattedDate.svelte";
 
-  let parser = new XMLParser();
+  let parser = new XMLParser({
+    attributes: {
+      ignore: false,
+    },
+  });
   let rssData = parser.parse(rssFeedXml).rss.channel;
   console.log(rssData);
   let rssJSON = JSON.stringify(rssData);
 </script>
 
-<div class="panel panel-main">
-  <h3 class="text-3xl">Recent Updates</h3>
+<div class="panel panel-main flex justify-between">
+  <h3 class="text-3xl inline-block">Recent Updates</h3>
+  <span>RSS: <code>dmv.community/@cccfocus.rss</code> <a target="_blank" class="ml-2 link-color outline outline-2 rounded-full" href="https://www.lifewire.com/what-is-an-rss-feed-4684568">❓</a></span>
 </div>
 {#each rssData.item as toot}
   <div class="panel panel-main prose">
