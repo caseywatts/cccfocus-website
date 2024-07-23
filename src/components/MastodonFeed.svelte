@@ -10,17 +10,16 @@
 </script>
 
 <div class="panel panel-main">
-  <h3 class="text-2xl">Recent Updates (via Mastodon)</h3>
+  <h3 class="text-3xl">Recent Updates</h3>
 </div>
 {#each rssData.item as toot}
   <div class="panel panel-main prose">
+    {@html toot.description}
     <div class="text-right text-gray-700 text-sm">
-      {rssData.title} on
       <a href={toot.link} class="">
         <FormattedDate date={toot.pubDate} />
       </a>
     </div>
-    {@html toot.description}
   </div>
 {/each}
 <div class="panel panel-main text-center">
