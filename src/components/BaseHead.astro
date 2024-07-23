@@ -1,0 +1,28 @@
+---
+// Import the global.css file here so that it is included on
+// all pages through the use of the <BaseHead /> component.
+import "../styles/global.css";
+
+const canonicalURL = new URL(Astro.url.host, Astro.site);
+---
+
+<!-- Global Metadata -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="icon" href="/favicon.png" />
+<meta name="generator" content={Astro.generator} />
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@100;200;300;400;500;600;700&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" /></noscript>
+
+<!-- <script defer data-domain="caseywatts.com" src="https://plausible.io/js/script.outbound-links.tagged-events.js"></script> -->
+
+<!-- <script>
+  // import some helper that is exposed by your current framework to determine the right mode manually
+  const dev = import.meta.env.MODE;
+</script> -->
+
+<!-- <link rel="stylesheet" href="/css/hyperaudio-lite-player.css" /> -->
+<!-- <script type="application/javascript" src="/js/hyperaudio-lite.js"></script> -->
+<!-- <script type="application/javascript" src="/js/hyperaudio-lite-wrapper.js"></script> -->
+<!-- <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.js"></script> -->

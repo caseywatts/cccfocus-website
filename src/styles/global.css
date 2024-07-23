@@ -1,0 +1,130 @@
+/* general setup */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) var(--primary);
+}
+
+body {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  /* font-family: 'Quicksand', sans-serif; */
+}
+
+.all-small-caps {
+  font-variant-caps: all-small-caps;
+}
+
+.link-color {
+  @apply text-blue-600 visited:text-violet-600;
+}
+
+.link {
+  @apply link-color underline;
+}
+
+.prose a {
+  @apply link-color underline;
+}
+
+.button-link {
+  @apply cursor-pointer rounded-full bg-gradient-to-r from-purple-200 via-blue-200 to-purple-200 p-4 text-center no-underline shadow-md shadow-violet-400 hover:shadow-violet-400/50 active:from-violet-200 active:to-violet-200;
+}
+
+.filter-button {
+  @apply my-2 cursor-pointer rounded-full bg-blue-200 p-2 shadow-md shadow-violet-400 hover:shadow-violet-400/50;
+}
+
+.filter-button.active {
+  @apply bg-violet-200 shadow-violet-200;
+}
+
+.prose blockquote strong {
+  font-weight: 800;
+}
+
+/* components */
+
+.panel {
+  @apply mx-auto my-2 max-w-3xl md:my-6;
+}
+
+.panel-main {
+  @apply bg-blue-50;
+  @apply p-4 md:p-6;
+  @apply shadow-md shadow-violet-400;
+}
+
+.link-card {
+  @apply block border border-blue-500 bg-blue-100 visited:border-purple-500 visited:bg-purple-100 hover:border-blue-900;
+  /* @apply p-2 md:p-6 my-2 md:my-6 mx-auto; */
+  @apply p-2 md:p-6;
+  /* @apply prose lg:prose-lg; */
+  @apply transition duration-500 ease-in-out;
+  @apply drop-shadow-2xl hover:drop-shadow-xl;
+}
+
+/* checkbox lists */
+
+.prose input[type="checkbox"] {
+  @apply mb-1 mr-1 mt-0;
+}
+
+.prose li:has(input[type="checkbox"]) {
+  @apply list-none -indent-6;
+}
+
+.prose img {
+  margin: auto;
+}
+
+/* blockquotes; code blocks */
+
+.prose blockquote {
+  font-style: normal;
+  @apply space-y-6 bg-blue-100 p-2 text-gray-600;
+}
+
+.prose blockquote p::before {
+  content: none;
+}
+.prose blockquote p {
+  @apply my-0;
+}
+
+code,
+pre {
+  @apply bg-blue-100;
+  border: 1px solid #ddd;
+  padding: 4px;
+  font-weight: normal;
+  overflow-x: scroll;
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Quicksand;
+  font-weight: 300;
+}

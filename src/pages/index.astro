@@ -1,40 +1,29 @@
 ---
-import OuterLayout from "../layouts/OuterLayout.astro";
+import OuterLayout from "../components/OuterLayout.astro";
 import SEOTags from "../components/SEOTags.svelte";
 
 const SITE_TITLE = "Charm City Community Focus Podcast";
 const SITE_DESCRIPTION = "Charm City Community Focus Podcast description";
+import SubscribeForm from "../components/SubscribeForm.astro";
 ---
 
 <SEOTags title={SITE_TITLE} description={SITE_DESCRIPTION} contentType="website" url={Astro.url.href} />
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body class="m-auto max-w-screen-xl p-4">
+<OuterLayout>
+  <div class="panel panel-main">
     <h1 class="text-3xl">Charm City Community Focus | Podcast</h1>
 
-    <div class="my-4 bg-blue-300 p-4">
+    <div class="mt-4">
       <p>We’ve got a lot of great communities in Baltimore.</p>
       <p>Let’s spread the word about all the great things we’ve got going on!</p>
     </div>
+  </div>
 
-    <form action="https://buttondown.email/api/emails/embed-subscribe/cccfocus" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/cccfocus', 'popupwindow')" class="embeddable-buttondown-form p-4 bg-purple-300 m-auto">
-      <h2 class="text-xl">Subscribe to the Newsletter</h2>
-      <label for="bd-email">Enter your email</label>
-      <input type="email" name="email" id="bd-email" />
+  <div id="newsletter"></div>
+  <SubscribeForm />
 
-      <input type="submit" value="Subscribe" class="p-2 bg-blue-100 rounded" />
-      <p>
-        <a href="https://buttondown.email/refer/cccfocus" target="_blank">Powered by Buttondown.</a>
-      </p>
-    </form>
-
-    <p class="my-4 bg-pink-300 p-4">Email us at `casey` at `cccfocus.org`</p>
-  </body>
-</html>
+  <div class="panel panel-main" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email us at `casey` at `cccfocus.org`</p>
+  </div>
+</OuterLayout>
