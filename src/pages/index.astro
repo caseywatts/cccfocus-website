@@ -16,7 +16,25 @@ const SITE_DESCRIPTION = "Charm City Community Focus Podcast description";
     <meta name="generator" content={Astro.generator} />
     <title>Astro</title>
   </head>
-  <body>
-    <h1>Astro</h1>
+  <body class="m-auto max-w-screen-xl p-4">
+    <h1 class="text-3xl">Charm City Community Focus | Podcast</h1>
+
+    <div class="my-4 bg-blue-300 p-4">
+      <p>We’ve got a lot of great communities in Baltimore.</p>
+      <p>Let’s spread the word about all the great things we’ve got going on!</p>
+    </div>
+
+    <form action="https://buttondown.email/api/emails/embed-subscribe/cccfocus" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/cccfocus', 'popupwindow')" class="embeddable-buttondown-form p-4 bg-purple-300 m-auto">
+      <h2 class="text-xl">Subscribe to the Newsletter</h2>
+      <label for="bd-email">Enter your email</label>
+      <input type="email" name="email" id="bd-email" />
+
+      <input type="submit" value="Subscribe" class="p-2 bg-blue-100 rounded" />
+      <p>
+        <a href="https://buttondown.email/refer/cccfocus" target="_blank">Powered by Buttondown.</a>
+      </p>
+    </form>
+
+    <p class="my-4 bg-pink-300 p-4">Email us at `casey` at `cccfocus.org`</p>
   </body>
 </html>
