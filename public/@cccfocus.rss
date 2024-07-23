@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:webfeeds="http://webfeeds.org/rss/1.0" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Charm City Community Focus</title>
+    <description>Public posts from @cccfocus@dmv.community</description>
+    <link>https://dmv.community/@cccfocus</link>
+    <image>
+      <url>https://dmvcommunitymedia.b-cdn.net/accounts/avatars/112/815/636/018/350/923/original/15c5368e3585a4ce.png</url>
+      <title>Charm City Community Focus</title>
+      <link>https://dmv.community/@cccfocus</link>
+    </image>
+    <lastBuildDate>Fri, 19 Jul 2024 23:21:56 +0000</lastBuildDate>
+    <webfeeds:icon>https://dmvcommunitymedia.b-cdn.net/accounts/avatars/112/815/636/018/350/923/original/15c5368e3585a4ce.png</webfeeds:icon>
+    <generator>Mastodon v4.2.10</generator>
+    <item>
+      <guid isPermaLink="true">https://dmv.community/@cccfocus/112815722745993774</guid>
+      <link>https://dmv.community/@cccfocus/112815722745993774</link>
+      <pubDate>Fri, 19 Jul 2024 23:21:56 +0000</pubDate>
+      <description>&lt;p&gt;Want to chat with us?&lt;/p&gt;&lt;p&gt;Join us on Discord:&lt;br /&gt;&lt;a href="https://discord.gg/xFZQYgug" target="_blank" rel="nofollow noopener noreferrer" translate="no"&gt;&lt;span class="invisible"&gt;https://&lt;/span&gt;&lt;span class=""&gt;discord.gg/xFZQYgug&lt;/span&gt;&lt;span class="invisible"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://dmv.community/@cccfocus/112815722091784987</guid>
+      <link>https://dmv.community/@cccfocus/112815722091784987</link>
+      <pubDate>Fri, 19 Jul 2024 23:21:46 +0000</pubDate>
+      <description>&lt;p&gt;Subscribe to our newsletter to hear about new episodes!&lt;/p&gt;&lt;p&gt;&lt;a href="https://buttondown.email/cccfocus?tag=mastodon" target="_blank" rel="nofollow noopener noreferrer" translate="no"&gt;&lt;span class="invisible"&gt;https://&lt;/span&gt;&lt;span class="ellipsis"&gt;buttondown.email/cccfocus?tag=&lt;/span&gt;&lt;span class="invisible"&gt;mastodon&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
