@@ -15,7 +15,7 @@
 
 <div class="panel panel-main sm:flex justify-between">
   <h3 class="text-3xl inline-block">Recent Updates</h3>
-  <span>RSS: <code>dmv.community/@cccfocus.rss</code> <a target="_blank" class="ml-2 link-color outline outline-2 rounded-full" href="https://www.lifewire.com/what-is-an-rss-feed-4684568">❓</a></span>
+  <span class="content-center">RSS: <code>dmv.community/@cccfocus.rss</code> <a target="_blank" class="ml-2 link-color outline outline-2 rounded-full" href="https://www.lifewire.com/what-is-an-rss-feed-4684568">❓</a></span>
 </div>
 {#each rssData.item as toot}
   <div class="panel panel-main prose">
