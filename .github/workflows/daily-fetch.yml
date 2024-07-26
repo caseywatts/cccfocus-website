@@ -20,7 +20,7 @@ jobs:
         run: npm install
       - name: Run My Script
         run: |
-          npm run pullData
+          npm run fetchData
       - name: Commit updated data
         run: |
           git config --global user.name 'Casey Botts'
