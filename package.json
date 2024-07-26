@@ -8,6 +8,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "fetchData": "npm run fetchMastodonRss",
     "fetchMastodonRss": "node src/lib/fetchMastodonRss.js"
   },
   "dependencies": {
