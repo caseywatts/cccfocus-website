@@ -1,6 +1,6 @@
 <script>
   import { XMLParser } from "fast-xml-parser";
-  import rssFeedXml from "../../public/@cccfocus.rss?raw";
+  import rssFeedXml from "../data/@cccfocus.rss?raw";
   import FormattedDate from "./FormattedDate.svelte";
 
   let parser = new XMLParser({
